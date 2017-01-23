@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+#html Mattermost'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e "s/'Mattermost'/'Commune'/g"
+find . -name '*.html' -print0 | xargs -0 perl -pi -e "s/Mattermost'/Commune CC'/g"
+find . -name '*.html' -print0 | xargs -0 perl -pi -e "s/'Mattermost/'Commune CC/g"
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/mattermost.org/youcommune.com/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/mattermost.com/youcommune.com/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/mattermost.example/youcommune.example/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e "s/Mattermost'/Commune CC'/g"
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/Mattermost /Commune CC /g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/Mattermost,/Commune CC,/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/Mattermost. /Commune CC. /g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/ Mattermost/ Commune CC/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/>Mattermost/>Commune CC/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/Town Square/Time Square/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/2016/2017/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/made with love for a better web/Uniting religious communities/g'
+find . -name '*.html' -print0 | xargs -0 perl -pi -e 's/"Mattermost"/"Commune CC"/g'
+
+#jsx
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e "s/'Mattermost'/'Commune'/g"
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e "s/Mattermost'/Commune CC'/g"
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e "s/'Mattermost/'Commune CC/g"
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/mattermost.org/youcommune.com/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/mattermost.com/youcommune.com/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/mattermost.example/youcommune.example/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/Mattermost /Commune CC /g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/Mattermost,/Commune CC,/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/ Mattermost/ Commune CC/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/>Mattermost/>Commune CC/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/Town Square/Time Square/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/2016/2017/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/made with love for a better web/Uniting religious communities/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/"Mattermost"/"Commune CC"/g'
+find . -name '*.jsx' -print0 | xargs -0 perl -pi -e 's/<h1>Mattermost<\/h1>/<h1>Commune CC<\/h1>/g'
+
+#json
+find . -name '*.json' -print0 | xargs -0 perl -pi -e "s/'Mattermost'/'Commune'/g"
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/mattermost.org/youcommune.com/g'
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/mattermost.com/youcommune.com/g'
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/mattermost.example/youcommune.example/g'
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/Mattermost /Commune CC /g'
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/ Mattermost/ Commune CC/g'
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/2016/2017/g'
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/"Mattermost"/"Commune CC"/g'
+find . -name '*.json' -print0 | xargs -0 perl -pi -e 's/Mattermost,/Commune CC,/g'
+
+#Go Files
+find . -name '*.go' -print0 | xargs -0 perl -pi -e 's/\/mattermost\//\/commune\//g'
+find . -name '*.go' -print0 | xargs -0 perl -pi -e 's/\/mattermost\//\/commune\//g'
+
+
+#cleanup
+find . -name '*.bak' -print0 | xargs -0 rm
+

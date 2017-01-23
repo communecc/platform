@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+.dropdown-menu {
+    border-radius: $border-rad;
+
+    &.colorpicker {
+        min-width: 125px;
+        z-index: 2500;
+    }
+
+    .fa {
+        @include opacity(.6);
+        margin-right: 5px;
+    }
+
+    .divider {
+        @include opacity(.15);
+    }
+
+    > li > a {
+        color: inherit;
+
+        &:focus,
+        &:hover {
+            color: inherit;
+        }
+    }
+}
